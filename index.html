@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <canvas id="matrix-background" aria-hidden="true"></canvas>
     <header class="site-header">
         <div class="container nav-wrapper">
             <a class="site-title" href="#home">JaCorey LaSane</a>
@@ -43,10 +44,16 @@
 
         <section id="about" class="section">
             <div class="container narrow">
-                <p class="section-label">About Me</p>
-                <h2>Who I Am as a Developer</h2>
+              <!--  <p class="section-label">About Me</p> -->
+                <h2>About Me</h2>
                 <p>
-                    My background combines software development with several years of IT support and technical leadership experience. I enjoy solving problems, building systems, and learning how different technologies work together. I’m currently strengthening my skills in C++, full-stack development, AI, and game systems while continuing to grow as a software engineer.
+                    I’m an Army veteran and Computer Science student at Full Sail University, pursuing a career in gameplay programming. My background includes IT support and technical leadership, with experience supporting the Army Reserve component at Fort Bragg as a mobile configuration manager. After transitioning toward software development, I completed Skillspire’s Full-Stack Immersion program before continuing my education at Full Sail.
+                </p>
+                <p>
+                    I’m currently developing Project Eclipse, a C++ combat systems prototype based on my original game concept. Through this project, I’m strengthening my understanding of gameplay logic, data structures, object-oriented programming, and software architecture. My development experience also includes a fitness tracker application, web development, and Microsoft Power Platform work through my internship with NC Tech.
+                </p>
+                <p>
+                    My goal is to become a gameplay developer specializing in combat systems. I’m drawn to fast-paced action, fluid movement, responsive controls, and the way timing and music shape the feel of an encounter. I enjoy breaking down those experiences into systems I can build, test, and refine.
                 </p>
 
                 <div class="skills-grid">
@@ -136,7 +143,7 @@
                     <article class="project-card">
                         <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project Two">
                         <div class="project-content">
-                            <p class="project-type">Additional Project</p>
+                            <p class="project-type"></p>
                             <h3>Project Two Title</h3>
                             <p>
                                 Duplicate this card when you are ready to add more work. Replace all placeholder text, links, and images before submitting.
@@ -182,8 +189,9 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Student Name. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
+            <p>&copy; 2026 Ja'Corey LaSane. Built with HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
         </div>
     </footer>
+    <script src="js/matrix.js"></script>
 </body>
 </html>

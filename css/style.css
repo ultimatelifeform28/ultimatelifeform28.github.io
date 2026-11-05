@@ -1,12 +1,12 @@
 :root {
     --background: #111018;
     --surface: #1a1824;
-    --surface-light: #242131;
+    --surface-light: #1c1c20;
     --text: #f5f3fa;
     --muted: #c5bfd0;
-    --accent: #b896ff;
-    --accent-dark: #8a5de8;
-    --border: #3a3449;
+    --accent: #ff5050;
+    --accent-dark: #cc2020;
+    --border: #141416;
     --max-width: 1100px;
 }
 
@@ -24,6 +24,8 @@ body {
     line-height: 1.6;
     color: var(--text);
     background: var(--background);
+    isolation:isolate;
+    background: #080808;
 }
 
 img {
@@ -48,8 +50,8 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(17, 16, 24, 0.96);
-    border-bottom: 1px solid var(--border);
+    background: rgba(8, 8, 8, 0.96);
+    border-bottom: 1px solid #ff2020;
 }
 
 .nav-wrapper {
@@ -86,7 +88,7 @@ a {
 
 .hero {
     padding: 7rem 0 6rem;
-    background: linear-gradient(135deg, #111018 0%, #211b31 100%);
+    background: transparent;
 }
 
 .hero-content {
@@ -192,7 +194,7 @@ h4 {
 }
 
 .alternate-background {
-    background: var(--surface);
+    background: transparent;
 }
 
 .skills-grid {
@@ -226,6 +228,8 @@ h4 {
 
 .project-card {
     overflow: hidden;
+    background-color: #1c1c20;
+    border-color #353539;
 }
 
 .project-card > img {
@@ -237,6 +241,7 @@ h4 {
 
 .project-content {
     padding: 1.5rem;
+    background-color: #1c1c20;
 }
 
 .project-content ul {
@@ -306,3 +311,32 @@ h4 {
         padding-top: 4.5rem;
     }
 }
+
+#matrix-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.35;
+
+}
+
+#about{
+    background-color: #141416;
+}
+
+#about > .container > p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 70ch;
+    margin-bottom: 1.5rem;
+}
+
+#about .info-card {
+    background-color: #1c1c20;
+    border-color: #353539;
+    border-top: 2px solid #ff2020;
+}
+
